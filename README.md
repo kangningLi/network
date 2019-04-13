@@ -14,3 +14,17 @@ If we want to evaluate 3D object detection AP (average precision), we need also 
 
 The code is tested TF 1.4 and TF 1.5 (GPU version) and Python 2.7 on Ubuntu 16.04 with NVIDIA GTX 1080 GPU. 
 
+### Prepare Training Data
+- Download [KITTI 3d detection dataset](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d "KITTI 3d detection dataset"). 
+```
+sh scripts/command_prep_data.sh
+``` 
+During this process, the frustum objects are extracted and saved as pickle file. 
+
+### Training the model
+```
+CUDA_VISIBLE_DEVICES=0 sh scripts/command_train_v1.sh
+``` 
+
+All of the parameters could be changed in this file, please also change the corresponding model name in the file.
+
