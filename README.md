@@ -28,3 +28,9 @@ CUDA_VISIBLE_DEVICES=0 sh scripts/command_train_v1.sh
 
 All of the parameters could be changed in this file, please also change the corresponding model name in the file.
 
+### Evaluation the model
+
+```
+CUDA_VISIBLE_DEVICES=0 sh scripts/command_test_v1.sh
+``` 
+The script will automatically evaluate the Frustum PointNets on the validation set based on precomputed 2D bounding boxes from a 2D detector (not released here), and then run the KITTI offline evaluation scripts to compute precision recall and calcuate average precisions for 2D detection, bird's eye view detection and 3D detection.
