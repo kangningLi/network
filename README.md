@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# model
-master thesis model
-=======
-# network_model
->>>>>>> 96a26d1e3f142d838fc465c10a972672096d11f9
-=======
-# network
->>>>>>> a8fc7988d4d3130a4e8ceaddc0cdcec9a5981f2e
+#### Master thesis network models
+
+Under models folder are the definition files of different models
+When train the model, please change the respective parameter settings under scripts folder
+[command_train_v1.sh](https://github.com/kangningLi/network/blob/master/scripts/command_train_v1.sh "command_train_v1.sh")
